@@ -13,3 +13,7 @@ function destructivelyUpdateObjectWithKeyAndValue(recipes, dinner, meat){
   recipes[dinner] = meat
   return recipes
 };
+
+function deleteFromObjectByKey(recipes, dinner, meat){
+  return Object.assign({}, recipes, { [dinner]: meat })
+};
